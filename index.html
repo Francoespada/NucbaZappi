@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/styles.css">
+    
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="modal">
+        <div class="modal-title">
+            <h3>Tus Productos</h3>
+            <div class="cerrar">
+                <span>X</span>
+            </div>
+        </div>
+        <div class="productos">
+
+        <!--    
+            <div class="productos-modal-cont">
+                <div class="prod-img">
+                    <img src="./assets/img/recom1.png" alt="">
+                </div>
+                <div class="prod-txt">
+                    <h5>Bennazianna</h5>
+                    <p>La mas completa</p>
+                    <span>$3650</span>
+                </div>
+                <div class="prod-cant">
+                    <div class="restar">-</div>
+                    <span>1</span>
+                    <div class="sumar">+</div>
+                </div> 
+            </div>
+
+        --> 
+        </div>
+        <div class="modal-total">
+            <hr>
+            <div class="modal-envio">
+                <span>Envio : </span>
+                <span>Gratis</span>
+            </div>
+            <div class="modal-precios-total">
+                <span id="total">Total : </span>
+                <span id="precio-total"></span>
+            </div>
+            <div class="btn-comprar">
+                <button id="comprar">COMPRAR</button>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <img src="./assets/img/nucbazappiicon 1.png" alt="" id="img-icon">
+        <ul class="ul-nav">
+            <li class="li-nav">
+                <img src="./assets/img/Home.png" alt="">
+                <a href="">Home</a>
+            </li>
+            <li class="li-nav carrito">
+                <img src="./assets/img/anadir-al-carrito.png" alt="">
+                <div class="contador-cont">
+                    <span id="contador-span"></span>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="text-content-main">
+            <div class="title">
+                <h1>Si tenes Zappi,</h1>
+                <h2>tenes Nucba.</h2>
+            </div>
+
+            <h6>Buscá lo que quieras y nucba te quedes sin comida</h6>
+            <button id="btn-main">VER MÁS</button>
+        </div>
+        <div class="img-main">
+            <img src="./assets/img/pizza2main.png" alt="" id="img-main1">
+            
+        </div>
+    </main>
+
+    <section class="recom">
+        <h6>Hoy te recomendamos</h6>
+        <div class="cards-cont">
+            <!--
+            <div class="recom-cards">
+                <div class="img-recom-cont">
+                    <img src="./assets/img/recom1.png" alt="">
+                </div>
+                <div class="text-recom-cont">
+                    <span class="recom-card-title">Bennaziana</span>
+                    <span class="recom-card-subt">la mas completa</span>
+                    <span class="recom-precio">$3650</span>
+                </div>
+                <div class="btn-agregar">
+                    <button id="btn-bennaziana" class="boton">Agregar</button>
+                </div>
+
+            </div>
+            <div class="recom-cards">
+                <div class="img-recom-cont">
+                    <img src="./assets/img/recom2.png" alt="">
+                </div>
+                <div class="text-recom-cont">
+                    <span class="recom-card-title">Tronco-Pizza</span>
+                    <span class="recom-card-subt">Para todo el dia</span>
+                    <span class="recom-precio">$870</span>
+                </div>
+                <div class="btn-agregar">
+                    <button id="btn-tronco" class="boton">Agregar</button>
+                </div>
+
+            </div>
+            <div class="recom-cards">
+                <div class="img-recom-cont">
+                    <img src="./assets/img/recom3.png" alt="">
+                </div>
+                <div class="text-recom-cont">
+                    <span class="recom-card-title">Papas | Provenzal</span>
+                    <span class="recom-card-subt">Van como piña</span>
+                    <span class="recom-precio">$360</span>
+                </div>
+                <div class="btn-agregar">
+                    <button id="papas" class="boton">Agregar</button>
+                </div>
+
+            </div>
+            -->
+        </div>
+
+    </section>
+
+    <section class="categorias">
+        <h6 id="cat-title">Categorias</h6>
+        <div class="cat-cards-cont">
+            <!--
+            <div class="cat-cards">
+                <div class="cat-img-cont">
+                    <img src="./assets/img/cat-pizza.png" alt="">
+                </div>
+                <div class="cat-txt-cont">
+                    <span>Populares</span>
+                    <hr>
+                </div>
+            </div>
+            <div class="cat-cards">
+                <div class="cat-img-cont">
+                    <img src="./assets/img/cat-pizza2.png" alt="">
+                </div>
+                <div class="cat-txt-cont">
+                    <span>Pizzas</span>
+                    <hr>
+                </div>
+            </div>
+            <div class="cat-cards">
+                <div class="cat-img-cont">
+                    <img src="./assets/img/cat-burger.png" alt="">
+                </div>
+                <div class="cat-txt-cont">
+                    <span>Hamburgesas</span>
+                    <hr>
+                </div>
+            </div>
+            <div class="cat-cards">
+                <div class="cat-img-cont">
+                    <img src="./assets/img/cat-papas.png" alt="">
+                </div>
+                <div class="cat-txt-cont">
+                    <span>Napapuki</span>
+                    <hr>
+                </div>
+            </div>
+            <div class="cat-cards">
+                <div class="cat-img-cont">
+                    <img src="./assets/img/cat-burrito.png" alt="">
+                </div>
+                <div class="cat-txt-cont">
+                    <span>Wraps</span>
+                    <hr>
+                </div>
+            </div>
+            <div class="cat-cards">
+                <div class="cat-img-cont">
+                    <img src="./assets/img/cat-taco.png" alt="">
+                </div>
+                <div class="cat-txt-cont">
+                    <span>Mexican Food</span>
+                    <hr>
+                </div>
+            </div>
+            <div class="cat-cards">
+                <div class="cat-img-cont">
+                    <img src="./assets/img/cat-batido.png" alt="">
+                </div>
+                <div class="cat-txt-cont">
+                    <span>Batidos</span>
+                    <hr>
+                </div>
+            </div>
+            -->
+        </div>
+
+    </section>
+
+    <section class="populares">
+        <h6>Los mas populares</h6>
+        <div class="cards-pop-cont">
+            <!--
+            <div class="pop-cards">
+                <div class="img-pop-cont">
+                    <img src="./assets/img/Pop-card-img1.png" alt="">
+                </div>
+                <div class="text-pop-cont">
+                    <span class="pop-card-title">La Mr. Pit</span>
+                    <span class="pop-card-subt">Solo para expertos</span>
+                </div>
+                <div class="pr-btn-recom">
+                    <span class="recom-precio">$350</span>
+                    <button id="btn-mr-pit" class="boton">Agregar</button>
+                </div>
+
+            </div>
+            <div class="pop-cards">
+                <div class="img-pop-cont">
+                    <img src="./assets/img/Pop-card-img2.png" alt="">
+                </div>
+                <div class="text-pop-cont">
+                    <span class="pop-card-title">¡Q'Jamone!</span>
+                    <span class="pop-card-subt">C/ jamon crudo</span>
+                </div>
+                <div class="pr-btn-recom">
+                    <span class="recom-precio">$350</span>
+                    <button id="btn-jamone" class="boton">Agregar</button>
+                </div>
+
+            </div>
+            <div class="pop-cards">
+                <div class="img-pop-cont">
+                    <img src="./assets/img/Pop-card-img3.png" alt="">
+                </div>
+                <div class="text-pop-cont">
+                    <span class="pop-card-title">La Charly García</span>
+                    <span class="pop-card-subt">¡BASTA!</span>
+                </div>
+                <div class="pr-btn-recom">
+                    <span class="recom-precio">$380</span>
+                    <button id="btn-charly" class="boton">Agregar</button>
+                </div>
+
+            </div>
+            <div class="pop-cards">
+                <div class="img-pop-cont">
+                    <img src="./assets/img/Pop-card-img4.png" alt="">
+                </div>
+                <div class="text-pop-cont">
+                    <span class="pop-card-title">La Maradona</span>
+                    <span class="pop-card-subt">¡ETERNA!</span>
+                </div>
+                <div class="pr-btn-recom">
+                    <span class="recom-precio">$450</span>
+                    <button id="btn-maradona" class="boton">Agregar</button>
+                </div>
+
+            </div>
+            <div class="pop-cards">
+                <div class="img-pop-cont">
+                    <img src="./assets/img/Pop-card-img5.png" alt="">
+                </div>
+                <div class="text-pop-cont">
+                    <span class="pop-card-title">Picantovich</span>
+                    <span class="pop-card-subt">Pica 2 veces</span>
+                </div>
+                <div class="pr-btn-recom">
+                    <span class="recom-precio">$750</span>
+                    <button id="btn-picantovich" class="boton">Agregar</button>
+                </div>
+
+            </div>
+            <div class="pop-cards">
+                <div class="img-pop-cont">
+                    <img src="./assets/img/Pop-card-img6.png" alt="">
+                </div>
+                <div class="text-pop-cont">
+                    <span class="pop-card-title">La Hasbulla</span>
+                    <span class="pop-card-subt">En honor al 1</span>
+                </div>
+                <div class="pr-btn-recom">
+                    <span class="recom-precio">$990</span>
+                    <button id="btn-hasbulla" class="boton">Agregar</button>
+                </div>
+
+            </div>
+            <div class="pop-cards">
+                <div class="img-pop-cont">
+                    <img src="./assets/img/Pop-card-img7.png" alt="">
+                </div>
+                <div class="text-pop-cont">
+                    <span class="pop-card-title">Leo Messi</span>
+                    <span class="pop-card-subt">¡De pié señores!</span>
+                </div>
+                <div class="pr-btn-recom">
+                    <span class="recom-precio">$10</span>
+                    <button id="btn-messi" class="boton">Agregar</button>
+                </div>
+
+            </div>
+            <div class="pop-cards">
+                <div class="img-pop-cont">
+                    <img src="./assets/img/Pop-card-img8.png" alt="">
+                </div>
+                <div class="text-pop-cont">
+                    <span class="pop-card-title">La maga</span>
+                    <span class="pop-card-subt">la que desaparece</span>
+                </div>
+                <div class="pr-btn-recom">
+                    <span class="recom-precio">$ Gratis</span>
+                    <button id="btn-maga" class="boton">Agregar</button>
+                </div>
+
+            </div>
+            -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="foot-links">
+            <a href="">Términos de uso</a>
+            <a href="">Trabajá con nosotros</a>
+            <a href="">Soporte</a>
+        </div>
+        <div class="foot-txt">
+            <span>Hecho con ❤️ por Franco Espada</span>
+        </div>
+    </footer>
+
+    <script src="./assets/app.js"></script>
+</body>
+</html>
